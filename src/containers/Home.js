@@ -55,7 +55,6 @@ export default class Home extends Component {
       <div style={Home.defaultStyle().div}>
         <div>
           <h1>Photo Wall</h1>
-          <p style={Home.defaultStyle().p}>There are two people in every photograph: the photographer and the viewer</p>
         </div>
         <GoogleOAuth
           ref={(googleOAuth) => this.googleOAuth = googleOAuth}
@@ -77,7 +76,7 @@ export default class Home extends Component {
           Sign-out from Google
         </a>
         }
-        <div>
+        <div><br /><br />
         {!this.state.signed ?
           <div>
             <h1
